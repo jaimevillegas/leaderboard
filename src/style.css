@@ -1,3 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  padding: 50px;
+  font-size: 16px;
+}
+
 h1 {
-  color: blue;
+  color: black;
+}
+
+button {
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px black;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 4px 4px 3px black;
+  font-weight: bold;
+}
+
+.body-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.recent-scores {
+  min-width: 45%;
+}
+
+.table-header {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-header button {
+  height: min-content;
+}
+
+.recent-scores ul {
+  border: 2px solid black;
+  padding: 0;
+}
+
+.recent-scores li {
+  list-style: none;
+  padding: 5px;
+}
+
+.recent-scores li:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+.add-score {
+  min-width: 45%;
+}
+
+.add-score form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-score input {
+  margin: 10px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.add-score button {
+  width: min-content;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: 10px;
 }
