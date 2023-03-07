@@ -3,7 +3,6 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   padding: 50px;
-  /* margin: 0; */
   font-size: 16px;
 }
 
@@ -24,7 +23,6 @@ button {
 button:hover {
   box-shadow: 4px 4px 3px black;
   font-weight: bold;
-
 }
 
 .body-wrapper {
@@ -60,7 +58,7 @@ button:hover {
 }
 
 .recent-scores li:nth-child(odd) {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .add-score {
@@ -87,6 +85,3 @@ button:hover {
   margin-right: 10px;
   margin-top: 10px;
 }
-
-
-
