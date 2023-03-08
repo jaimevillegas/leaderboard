@@ -2,13 +2,13 @@
 
 :root {
   --main-bg-color: #2b4865;
-  --secondary-color:  #002b5b;
+  --secondary-color: #002b5b;
   --third-color: #256d85;
-  --text-color: #8FE3CF;
+  --text-color: #8fe3cf;
 }
 
 ::placeholder {
-  color: #dddddd;
+  color: #ddd;
 }
 
 body {
