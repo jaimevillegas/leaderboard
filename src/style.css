@@ -1,22 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
+:root {
+  --main-bg-color: #2b4865;
+  --secondary-color:  #002b5b;
+  --third-color: #256d85;
+  --text-color: #8FE3CF;
+}
+
+::placeholder {
+  color: #dddddd;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   padding: 50px;
   font-size: 16px;
+  background-color: var(--main-bg-color);
 }
 
 h1 {
-  color: black;
+  color: var(--text-color);
+  font-size: 62px;
+  text-align: center;
 }
 
 button {
-  background-color: white;
-  border: 2px solid black;
-  padding: 5px;
+  background-color: var(--third-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--text-color);
+  font-size: 20px;
+  padding: 10px;
   margin: 0;
   border-radius: 4px;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 2px 2px 3px var(--secondary-color);
   cursor: pointer;
 }
 
@@ -32,6 +48,7 @@ button:hover {
 }
 
 .recent-scores {
+  color: var(--text-color);
   min-width: 45%;
 }
 
@@ -48,20 +65,22 @@ button:hover {
 }
 
 .recent-scores ul {
-  border: 2px solid black;
+  border: 2px solid var(--secondary-color);
   padding: 0;
 }
 
 .recent-scores li {
   list-style: none;
-  padding: 5px;
+  padding: 10px;
+  font-size: 24px;
 }
 
 .recent-scores li:nth-child(odd) {
-  background-color: #dcdcdc;
+  background-color: var(--secondary-color);
 }
 
 .add-score {
+  color: var(--text-color);
   min-width: 45%;
 }
 
@@ -72,9 +91,13 @@ button:hover {
 }
 
 .add-score input {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   margin: 10px;
-  height: 25px;
-  border: 2px solid black;
+  padding: 5px;
+  height: 45px;
+  font-size: 24px;
+  border: 2px solid var(--secondary-color);
   border-radius: 3px;
 }
 
