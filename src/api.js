@@ -3,17 +3,13 @@ const gameID = '8hN6PIyTxPuUmugLVKvR';
 
 // Retrieve data from the API
 const retreiveData = async () => {
-  console.log('Retreiving Data...');
   const response = await fetch(`${url}games/${gameID}/scores`);
   const data = await response.json();
   return data;
-}
+};
 
 // When form is completed, sends the inputs to the API
 const submitScores = async (user, score) => {
-  console.log('Submitting Scores...');
-  console.log(user);
-  console.log(score);
   const response = await fetch(`${url}games/${gameID}/scores`, {
     method: 'POST',
     headers: {
@@ -28,4 +24,4 @@ const submitScores = async (user, score) => {
 export {
   retreiveData,
   submitScores,
-}
+};

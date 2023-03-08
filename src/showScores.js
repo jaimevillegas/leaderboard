@@ -2,8 +2,7 @@ import { retreiveData } from './api.js';
 
 const leaderboard = document.querySelector('.leaderboard');
 const displayScores = async () => {
-  console.log("Display Scores");
-  leaderboard.innerHTML = '';
+  leaderboard.innerHTML = ' ';
   const scores = await retreiveData();
   const scoresObj = scores.result;
   scoresObj.forEach((score) => {

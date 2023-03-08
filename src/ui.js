@@ -1,5 +1,5 @@
-import { submitScores } from './api';
-import displayScores from './showScores';
+import { submitScores } from './api.js';
+import displayScores from './showScores.js';
 
 const refreshButton = document.querySelector('.refresh-button');
 const submitButton = document.querySelector('.submit-button');
